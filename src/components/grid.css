@@ -1,0 +1,13 @@
+.grid {
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(10,35px);
+}
+
+
+.cube {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+}
