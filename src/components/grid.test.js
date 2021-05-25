@@ -8,7 +8,7 @@ describe('transform grid', () => {
   it('if passed empty array, return empty array', () => {
     expect(transformGrid([])).to.be.empty;
   });
-  it('if passed multi-dimensional array, return empty array', () => {
+  it('if passed multi-dimensional array, return reversed array', () => {
     const input = [
       [0, 3, 6],
       [1, 4, 7],
@@ -19,7 +19,6 @@ describe('transform grid', () => {
       [3, 4, 5],
       [6, 7, 8],
     ];
-    console.log(input[1][2]);
     expect(transformGrid(input)).to.deep.equal(expected);
   });
 });
